@@ -142,7 +142,7 @@
                                                         </value>
                                                         <next>
                                                           <block type="oled_drawtext" id="125">
-                                                            <field name="TEXT">1 greater or equal 2=</field>
+                                                            <field name="TEXT">1 greater &amp; equal 2=</field>
                                                             <next>
                                                               <block type="oled_drawnumber" id="126" inline="true">
                                                                 <value name="NUMBER">
