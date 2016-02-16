@@ -64,6 +64,44 @@
                                 </value>
                               </block>
                             </value>
+                            <next>
+                              <block type="oled_setcursor" id="106" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="107">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="108">
+                                    <field name="NUM">20</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawtext" id="109">
+                                    <field name="TEXT">1 greater equals 2 =</field>
+                                    <next>
+                                      <block type="oled_drawnumber" id="110" inline="true">
+                                        <value name="NUMBER">
+                                          <block type="logic_compare" id="111" inline="true">
+                                            <field name="OP">GT</field>
+                                            <value name="A">
+                                              <block type="math_number" id="112">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="113">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
