@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="17" x="27" y="58">
+  <block type="oled_cleardisplay" id="17" x="55" y="-10">
     <next>
       <block type="oled_setcursor" id="27" inline="true">
         <value name="STARTX">
@@ -128,6 +128,82 @@
                                                         </value>
                                                       </block>
                                                     </value>
+                                                    <next>
+                                                      <block type="oled_setcursor" id="122" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="math_number" id="123">
+                                                            <field name="NUM">0</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="math_number" id="124">
+                                                            <field name="NUM">40</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="oled_drawtext" id="125">
+                                                            <field name="TEXT">1 greater than or equal 2 =</field>
+                                                            <next>
+                                                              <block type="oled_drawnumber" id="126" inline="true">
+                                                                <value name="NUMBER">
+                                                                  <block type="logic_compare" id="127" inline="true">
+                                                                    <field name="OP">GTE</field>
+                                                                    <value name="A">
+                                                                      <block type="math_number" id="128">
+                                                                        <field name="NUM">1</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="129">
+                                                                        <field name="NUM">2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="oled_setcursor" id="130" inline="true">
+                                                                    <value name="STARTX">
+                                                                      <block type="math_number" id="131">
+                                                                        <field name="NUM">0</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="STARTY">
+                                                                      <block type="math_number" id="132">
+                                                                        <field name="NUM">50</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="oled_drawtext" id="133">
+                                                                        <field name="TEXT">1 less than or equal 2 =</field>
+                                                                        <next>
+                                                                          <block type="oled_drawnumber" id="134" inline="true">
+                                                                            <value name="NUMBER">
+                                                                              <block type="logic_compare" id="135" inline="true">
+                                                                                <field name="OP">LTE</field>
+                                                                                <value name="A">
+                                                                                  <block type="math_number" id="136">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="137">
+                                                                                    <field name="NUM">2</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
